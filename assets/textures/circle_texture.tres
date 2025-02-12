@@ -1,0 +1,11 @@
+[gd_resource type="GradientTexture2D" load_steps=2 format=3 uid="uid://c8pto0jbp14ti"]
+
+[ext_resource type="Gradient" uid="uid://udkbsknhc200" path="res://assets/gradients/white_transparent_instant_gradient.tres" id="1_nbqub"]
+
+[resource]
+gradient = ExtResource("1_nbqub")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+metadata/_snap_enabled = true
+metadata/_snap_count = 2
