@@ -1,0 +1,17 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://cfwte1ded2wql"]
+
+[ext_resource type="StyleBox" uid="uid://dss153opwtqc5" path="res://assets/styling/button_background.tres" id="1_0o3jg"]
+[ext_resource type="StyleBox" uid="uid://djtqrjp7fkq7c" path="res://assets/styling/button_background_hover.tres" id="1_e0152"]
+[ext_resource type="StyleBox" uid="uid://dbnm8jaqaw74e" path="res://assets/styling/button_background_pressedtres.tres" id="3_17to4"]
+
+[resource]
+Button/constants/icon_max_width = 48
+Button/styles/focus = ExtResource("1_0o3jg")
+Button/styles/hover = ExtResource("1_e0152")
+Button/styles/normal = ExtResource("1_0o3jg")
+Button/styles/pressed = ExtResource("3_17to4")
+MarginContainer/constants/margin_bottom = 5
+MarginContainer/constants/margin_left = 5
+MarginContainer/constants/margin_right = 5
+MarginContainer/constants/margin_top = 5
+VBoxContainer/constants/separation = 5

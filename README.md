@@ -3,16 +3,15 @@ A editor capable of displaying and working with undirected metric graphs.
 
 ## Controls
 
-This document outlines the keyboard and mouse controls for graph manipulation.
-
 ### Node Selection
 
 | Action | Control | Description |
 |--------|---------|-------------|
-| Select Node | Left Mouse Button | Select an hovered node |
+| Select Node | Left Mouse Button | Select the hovered node |
+| Select Additional Node | Shift+Left Mouse Button | Add the hovered node to selection |
 | Select All | A | Select all nodes in the graph |
-| Deselect | Right Mouse Button | Deselect hovered selected node |
-| Deselect All | Ctrl+Right Mouse Button | Deselect all currently selected nodes |
+| Deselect | Ctrl+Left Mouse Button | Deselect hovered node |
+| Deselect All | Left Mouse Button into void | Deselect all currently selected nodes |
 
 ### Node Management
 
@@ -24,6 +23,9 @@ This document outlines the keyboard and mouse controls for graph manipulation.
 | Remove Nodes | X | Delete selected nodes from the graph |
 | Move Node | G | Move last selected node to cursor |
 | Print Node Info | I | Display information about selected nodes |
+| Hide Node | H | Hide selected nodes (and edges connected to them) |
+| Reveal Hidden Nodes | Alt+H | Reveal nodes markes as hidden |
+| Toggle Edge Mode | Ctrl+H | Toggle between showing edges of all visible nodes and only showing edges of selected nodes |
 
 ### Node Connections
 

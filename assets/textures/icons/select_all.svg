@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 67.733332 67.733333"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="select_all.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#1c1c1c"
+     bordercolor="#0d0d0d"
+     borderopacity="0.24705882"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#0e0e0e"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="2.025849"
+     inkscape:cx="26.902301"
+     inkscape:cy="142.40943"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1753" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient1671"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1669" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1753">
+      <g
+         id="g1986"
+         transform="translate(-0.42860614,0.31019986)">
+        <g
+           id="g1922"
+           style="stroke-width:1.00012;stroke-dasharray:none"
+           transform="translate(-11.359142,-12.467351)">
+          <circle
+             style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.00012;stroke-linecap:round;stroke-dasharray:none"
+             id="path788"
+             cx="33.866665"
+             cy="33.866665"
+             r="3.96875" />
+          <ellipse
+             style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.00012;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             id="path788-7"
+             cx="33.866665"
+             cy="33.866665"
+             rx="5.8457294"
+             ry="5.8457313" />
+        </g>
+        <g
+           id="g1922-3"
+           style="stroke-width:1.00012;stroke-dasharray:none"
+           transform="translate(12.216357,-3.5756204)">
+          <circle
+             style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.00012;stroke-linecap:round;stroke-dasharray:none"
+             id="path788-71"
+             cx="33.866665"
+             cy="33.866665"
+             r="3.96875" />
+          <ellipse
+             style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.00012;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             id="path788-7-6"
+             cx="33.866665"
+             cy="33.866665"
+             rx="5.8457294"
+             ry="5.8457313" />
+        </g>
+        <g
+           id="g1922-7"
+           style="stroke-width:1.00012;stroke-dasharray:none"
+           transform="translate(-2.0056574,11.846954)">
+          <circle
+             style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.00012;stroke-linecap:round;stroke-dasharray:none"
+             id="path788-75"
+             cx="33.866665"
+             cy="33.866665"
+             r="3.96875" />
+          <ellipse
+             style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.00012;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             id="path788-7-3"
+             cx="33.866665"
+             cy="33.866665"
+             rx="5.8457294"
+             ry="5.8457313" />
+        </g>
+      </g>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2.64583;stroke-linecap:round;stroke-dasharray:3.96874487,5.95311731;stroke-opacity:1;stroke-dashoffset:0"
+         id="rect2040"
+         width="49.8577"
+         height="49.8577"
+         x="8.9378204"
+         y="8.9378204"
+         ry="6.614583" />
+    </g>
+  </g>
+</svg>

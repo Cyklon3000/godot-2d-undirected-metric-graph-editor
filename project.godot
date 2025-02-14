@@ -41,11 +41,6 @@ graph_select_node={
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(244, 23),"global_position":Vector2(253, 71),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
-graph_deselect_all={
-"deadzone": 0.2,
-"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":true,"meta_pressed":false,"button_mask":2,"position":Vector2(213, 8),"global_position":Vector2(222, 56),"factor":1.0,"button_index":2,"canceled":false,"pressed":true,"double_click":false,"script":null)
-]
-}
 graph_print_node_info={
 "deadzone": 0.2,
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":73,"key_label":0,"unicode":105,"location":0,"echo":false,"script":null)
@@ -63,9 +58,9 @@ graph_function_key={
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194328,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
-graph_deselect={
+graph_deselect_node={
 "deadzone": 0.2,
-"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":2,"position":Vector2(143, 13),"global_position":Vector2(152, 61),"factor":1.0,"button_index":2,"canceled":false,"pressed":true,"double_click":false,"script":null)
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":true,"meta_pressed":false,"button_mask":1,"position":Vector2(164, 22),"global_position":Vector2(173, 70),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
 graph_add_node_connected_to_selected={
@@ -111,6 +106,26 @@ graph_pan={
 graph_connect_to_all_other={
 "deadzone": 0.2,
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":true,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":67,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
+graph_hide_selected={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":72,"key_label":0,"unicode":104,"location":0,"echo":false,"script":null)
+]
+}
+graph_reset_hidden={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":true,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":72,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
+graph_toggle_edge_rendering_mode={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":true,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":72,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
+graph_select_additional_node={
+"deadzone": 0.2,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":true,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(171, 21),"global_position":Vector2(180, 69),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
 

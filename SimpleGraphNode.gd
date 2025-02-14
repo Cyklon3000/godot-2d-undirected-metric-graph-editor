@@ -5,9 +5,12 @@ var adjacent_nodes: Array[SimpleGraphNode] = []
 var distance_lookup: Dictionary[int, float] = {} # hash(self.hash() + other.hash()) -> distance
 
 var node_color: Color
+var is_node_hidden: bool = false
+var is_edges_hidden: bool = false
 
 const NODE_RADIUS: int = 15
 const EDGE_WIDTH: int = 2
+@onready var camera: Camera2D = get_node("../Camera2D")
 
 func _init(position : Vector2 = Vector2.ZERO) -> void:
 	self.position = position
@@ -19,15 +22,16 @@ func _process(delta: float) -> void:
 	queue_redraw()
 
 func _draw() -> void:
-	draw_circle(Vector2.ZERO, 15, self.node_color, true, -1.0, true)
+	if is_node_hidden: return
+	draw_circle(Vector2.ZERO, NODE_RADIUS, self.node_color, true, -1.0, true)
 	draw_edges()
 
 func draw_edges(draw_all: bool = false) -> void:
 	for adjacent_node: SimpleGraphNode in adjacent_nodes:
 		# Avoid drawing edges twice (adjacent will draw edge instead) 
 		# Avoid drawing edge from self to self
-		if (not draw_all) and (adjacent_node.hash() >= self.hash()):
-			continue
+		if (not draw_all) and (adjacent_node.hash() >= self.hash()): continue
+		if adjacent_node.is_node_hidden or (self.is_edges_hidden and adjacent_node.is_edges_hidden): continue
 		
 		draw_line(Vector2.ZERO, adjacent_node.position - self.position, Color(Color.WHITE, 0.5), EDGE_WIDTH, true)
 

@@ -1,11 +1,144 @@
-[gd_scene load_steps=3 format=3 uid="uid://da6s47i35vho2"]
+[gd_scene load_steps=18 format=3 uid="uid://da6s47i35vho2"]
 
 [ext_resource type="Script" uid="uid://bcyioywiq6ofs" path="res://SimpleGraphEdit.gd" id="1_43vlf"]
-[ext_resource type="Script" uid="uid://b44sxw7ptj23n" path="res://ControlledCamera2D.gd" id="2_njyjp"]
+[ext_resource type="Theme" uid="uid://cfwte1ded2wql" path="res://assets/styling/main_theme.tres" id="3_iu0y0"]
+[ext_resource type="Texture2D" uid="uid://qfu6ynbgtjkk" path="res://assets/textures/icons/select_all.png" id="3_w8s75"]
+[ext_resource type="Texture2D" uid="uid://ct41dmr2kvfhw" path="res://assets/textures/icons/deselect_all.png" id="4_eimjq"]
+[ext_resource type="Texture2D" uid="uid://hy0ccoqpptya" path="res://assets/textures/icons/add_node.png" id="5_5ig1k"]
+[ext_resource type="Texture2D" uid="uid://bcg2gfryxlk53" path="res://assets/textures/icons/add_connected_node.png" id="6_hl3g4"]
+[ext_resource type="Texture2D" uid="uid://cqth4642i1jab" path="res://assets/textures/icons/add_fully_connected_node.png" id="7_fw3aa"]
+[ext_resource type="Texture2D" uid="uid://cajwnjh2oht87" path="res://assets/textures/icons/delete_node.png" id="8_jlxu4"]
+[ext_resource type="Texture2D" uid="uid://ck5fy3ap7owup" path="res://assets/textures/icons/move_node.png" id="9_eg10r"]
+[ext_resource type="Texture2D" uid="uid://mkagwd4lsnql" path="res://assets/textures/icons/connect_nodes.png" id="10_en86s"]
+[ext_resource type="Texture2D" uid="uid://6fvnh0i6en1j" path="res://assets/textures/icons/connect_to_all_nodes.png" id="11_tdgnu"]
+[ext_resource type="Texture2D" uid="uid://b48uhae23aypo" path="res://assets/textures/icons/disconnect_nodes.png" id="12_lmiiv"]
+[ext_resource type="Texture2D" uid="uid://lt6k2wia3mar" path="res://assets/textures/icons/disconnect_from_all_nodes.png" id="13_5nmn2"]
+[ext_resource type="Texture2D" uid="uid://c0bx5fdpkruad" path="res://assets/textures/icons/node_info.svg" id="14_6yj33"]
+[ext_resource type="Texture2D" uid="uid://b888eq6owg8ph" path="res://assets/textures/icons/hide_node.png" id="15_fw3aa"]
+[ext_resource type="Texture2D" uid="uid://bj6np5ivh87kq" path="res://assets/textures/icons/reveal_hidden_nodes.png" id="16_jlxu4"]
+[ext_resource type="Texture2D" uid="uid://lvbrqeocwuwi" path="res://assets/textures/icons/toggle_edge_rendering_mode.png" id="17_eg10r"]
 
 [node name="SimpleGraphEdit" type="Node2D"]
 script = ExtResource("1_43vlf")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position_smoothing_enabled = true
-script = ExtResource("2_njyjp")
+position_smoothing_speed = 15.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 58.0
+grow_vertical = 2
+theme = ExtResource("3_iu0y0")
+
+[node name="VFlowContainer" type="VFlowContainer" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+
+[node name="select_all" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("3_w8s75")
+
+[node name="deselect_all" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("4_eimjq")
+
+[node name="add_node" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("5_5ig1k")
+
+[node name="add_connected_node" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("6_hl3g4")
+
+[node name="add_fully_connected_node" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("7_fw3aa")
+
+[node name="remove_nodes" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("8_jlxu4")
+
+[node name="move_node" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("9_eg10r")
+
+[node name="connect_nodes" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("10_en86s")
+
+[node name="connect_to_all" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("11_tdgnu")
+
+[node name="disconnect_node" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("12_lmiiv")
+
+[node name="disconnect_from_all" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("13_5nmn2")
+
+[node name="print_node_info" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("14_6yj33")
+
+[node name="hide_selected_nodes" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("15_fw3aa")
+
+[node name="reveal_hidden_nodes" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("16_jlxu4")
+
+[node name="toggle_edge_rendering_mode" type="Button" parent="CanvasLayer/MarginContainer/VFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("3_iu0y0")
+icon = ExtResource("17_eg10r")
+
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/select_all" to="." method="_on_select_all_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/deselect_all" to="." method="_on_deselect_all_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/add_node" to="." method="_on_add_node_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/add_connected_node" to="." method="_on_add_connected_node_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/add_fully_connected_node" to="." method="_on_add_fully_connected_node_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/remove_nodes" to="." method="_on_remove_nodes_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/move_node" to="." method="_on_move_node_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/connect_nodes" to="." method="_on_connect_nodes_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/connect_to_all" to="." method="_on_connect_to_all_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/disconnect_node" to="." method="_on_disconnect_node_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/disconnect_from_all" to="." method="_on_disconnect_from_all_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/print_node_info" to="." method="_on_print_node_info_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/hide_selected_nodes" to="." method="_on_hide_selected_nodes_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/reveal_hidden_nodes" to="." method="_on_reveal_hidden_nodes_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VFlowContainer/toggle_edge_rendering_mode" to="." method="_on_toggle_edge_rendering_mode_pressed"]
